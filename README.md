@@ -96,9 +96,9 @@ User Prompt
 #### Example Images
 
 - **Generated image:**  
-  ![Generated Image](assets/image.png)
+  ![Generated Image](Images/Img_Dragon.png)
 - **With removed background:**  
-  ![No Background](assets/image_nobg.png)
+  ![No Background](Images/Img_Dragon_Rm.png)
 
 Notice how the second image isolates the subject, making it ideal for 3D reconstruction.
 
@@ -293,7 +293,7 @@ Running this application locally requires significant computational resources, e
 
 The following image shows the output of `nvidia-smi` on a system with multiple NVIDIA RTX 3090 GPUs (24GB VRAM each) while running components of this application:
 
-![GPU Memory Usage Example](assets/memory_requirements.png)
+![GPU Memory Usage Example](Images/Memory.png)
 
 *Discussion:*
 - **GPU 0:** Shows a `python3` process (PID 2155650) using approximately **9318 MiB (around 9.1 GB)** of VRAM. This likely corresponds to the **Gemma 2 2B LLM** being loaded and active for prompt enhancement.
