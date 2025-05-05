@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "creative-ai-engine"
+version = "0.1.0"
+description = "An AI application that transforms text ideas into images and 3D models"
+authors = ["Your Name <your.email@example.com>"]
+packages = [
+    { include = "app" },
+    { include = "core" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openfabric-pysdk = "^0.2.12"
+gradio = "^4.19.2"
+transformers = "^4.37.2"
+torch = "^2.2.0"
+Flask = ">=2.0.1,<3.0.0"
+Flask-Cors = ">=3.0.10,<4.0.0"
+Flask-RESTful = ">=0.3.9,<0.4.0"
+Flask-SocketIO = ">=5.3.6,<6.0.0"
+flask-apispec = ">=0.11.0,<0.12.0"
+deepdiff = ">=7.0.1,<8.0.0"
+gevent = ">=22.10.2"
+python-socketio = ">=5.12.0"
+requests = "^2.31.0"
+pillow = "^10.2.0"
+websockets = "^12.0"
+marshmallow = "^3.20.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[[tool.poetry.source]]
+name = "node2"
+url = "https://repo.node2.openfabric.network/index"
+priority = "supplemental"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

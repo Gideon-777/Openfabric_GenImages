@@ -1,0 +1,41 @@
+
+        <!DOCTYPE html>
+        <html>
+            <head>
+                <title>3D Model Viewer</title>
+                <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+                <style>
+                    body {
+                        margin: 0;
+                        background: #181818; /* Darker background for contrast */
+                    }
+                    model-viewer {
+                        width: 100%;
+                        height: 660px;
+                        background-color: #181818; /* Darker background for model */
+                        border-radius: 8px;
+                        box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+                    }
+                </style>
+            </head>
+            <body>
+                <model-viewer 
+                    src="./model_5.glb" 
+                    alt="3D Model" 
+                    camera-controls 
+                    auto-rotate 
+                    ar 
+                    shadow-intensity="1"
+                    exposure="0.7"
+                    environment-image="neutral"
+                    tone-mapping="aces"
+                    shadow-softness="1"
+                    style="background-color: #181818;"
+                >
+                </model-viewer>
+                <div style="color:#888; font-size:12px; text-align:center; margin-top:8px;">
+                    <em>Note: Model color is determined by the 3D file. For a dark model, upload or generate a model with dark materials.</em>
+                </div>
+            </body>
+        </html>
+        

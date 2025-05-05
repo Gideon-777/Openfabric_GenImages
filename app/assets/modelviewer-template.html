@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>3D Model Viewer</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        model-viewer {
+            width: {{WIDTH}}px;
+            height: {{HEIGHT}}px;
+            background-color: #f5f5f5;
+            --poster-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <model-viewer
+        src="{{MODEL_PATH}}"
+        camera-controls
+        auto-rotate
+        ar
+        environment-image="/static/env_maps/gradient.jpg"
+        shadow-intensity="1"
+        camera-orbit="45deg 55deg 2.5m"
+        exposure="1"
+        id="modelviewer">
+    </model-viewer>
+</body>
+</html>
